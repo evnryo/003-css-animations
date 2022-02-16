@@ -1,0 +1,44 @@
+body{
+    background-image: url(background.jpeg);
+    background-size: cover;
+    min-height: 100vh;
+  }
+  
+  .bird-container{
+    width: 120px;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    /* forwards the animation remain in the state of the end */
+    animation: birdAnimation 4s  infinite;
+  }
+  
+  .bird-container img{
+    width: 100%;
+  }
+  
+  @keyframes birdAnimation{
+    0%{
+      left: 10%;
+      top: 30%;
+      transform: rotate(0deg)
+    }
+    40%{
+      left: 43%;
+      top: 70%;
+  
+      transform: rotate(0deg)
+    }
+    70%{
+      left: 20%;
+      top: 30%;
+      transform: rotate(0deg)
+  
+    }
+    100%{
+      left: 10%;
+      top: 30%;
+      transform: rotate(0deg)
+      
+    }
+  }
